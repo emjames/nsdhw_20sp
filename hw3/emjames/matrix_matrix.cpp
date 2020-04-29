@@ -1,6 +1,20 @@
 #include <iostream>
 #include "matrix.h"
 
+// Return a populated vector
+std::vector<double> full_vector(size_t n)
+{
+  std::vector<double> result;
+
+  for (size_t i = 0; i < n; i++)
+  {
+    result.push_back(static_cast<double>(i));
+  }
+
+  return result;
+}
+
+
 void example()
 {
     std::cout << ">>> A(2x3) times B(3x2):" << std::endl;
