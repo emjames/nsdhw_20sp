@@ -14,6 +14,17 @@ std::vector<double> full_vector(size_t n)
   return result;
 }
 
+void multiply_naive()
+{
+  std::cout << "Multiply naive \n";
+
+  Matrix mat1(2, 3, full_vector(6));
+  Matrix mat2(3, 2, full_vector(6));
+
+  Matrix mat3 = mat1 * mat2;
+  std::cout << "result matrix \n";
+  std::cout << mat3 << std::endl; 
+}
 
 void example()
 {
@@ -36,8 +47,8 @@ void example()
 
 int main(int argc, char ** argv){
 
-  // multiply_naive();
-  example();
+  multiply_naive();
+  // example();
 
   return 0;
 }
